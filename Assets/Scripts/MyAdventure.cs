@@ -11,8 +11,10 @@ public class MyAdventure : MonoBehaviour
         start,
         Intro,
         geluid_horen,
-        Ja,
-        Nee,
+        geluid_Ja,
+        geluid_verder_film_kijken,
+        geluid_niet_film_kijken,
+        geluid_Nee,
         loopt_naar_de_gang,
 
 
@@ -55,7 +57,7 @@ public class MyAdventure : MonoBehaviour
             }
             //else if (input == "1337")
             //{
-                //Terminal.WriteLine("jij bent leet");
+            //Terminal.WriteLine("jij bent leet");
             //}
             else
             {
@@ -77,23 +79,35 @@ public class MyAdventure : MonoBehaviour
         {
             if (input == "JA")
             {
-                Ja();
+                geluid_Ja();
             }
             else
             {
-                //Terminal.WriteLine("je invoer is niet juist");
+                Terminal.WriteLine("je invoer is niet juist");
             }
         }
 
-        if (currentStates == States.Nee)
+        else if (currentStates == States.geluid_Ja)
         {
-            if (input == "NEE")
+            if (input == "FILM VERDER KIJKEN")
             {
-                Nee();
+                geluid_verder_film_kijken();
             }
             else
             {
-                Terminal.WriteLine("je bent LELIJK");
+                Terminal.WriteLine("Je invoer is niet juist");
+            }
+        }
+
+        if (currentStates == States.geluid_horen)
+        {
+            if (input == "NEE")
+            {
+                geluid_Nee();
+            }
+            else
+            {
+                //Terminal.WriteLine("je invoer is niet juist.");
             }
         }
 
@@ -126,9 +140,9 @@ public class MyAdventure : MonoBehaviour
 
     }
 
-    void Ja()
+    void geluid_Ja()
     {
-        currentStates = States.Ja;
+        currentStates = States.geluid_Ja;
         Terminal.ClearScreen();
         Terminal.WriteLine("*je kijkt uit het raam*");
         Terminal.WriteLine("kijkt naar links...");
@@ -142,11 +156,21 @@ public class MyAdventure : MonoBehaviour
 // moet kijken of ik die verder kijken of blijf kijken er moet laten of eruit moet halen//
     }
 
-    void Nee()
+    void geluid_verder_film_kijken()
     {
-        currentStates = States.Ja;
+        currentStates = States.geluid_verder_film_kijken;
         Terminal.ClearScreen();
-        Terminal.WriteLine("ddddds");
-        currentStates = States.Nee;
+        Terminal.WriteLine("Je hoort iets op de gang op je af lopen");
+        Terminal.WriteLine("je gaat kijken");
+    }
+
+    void geluid_Nee()
+    {
+        currentStates = States.geluid_Nee;
+        Terminal.ClearScreen();
+        Terminal.WriteLine("Je loopt naar de gang");
+        Terminal.WriteLine("want je hoorde allemaal geluiden.");
+        Terminal.WriteLine("Wil je ouders roepen type: OUDERS ROEPEN");
+        Terminal.WriteLine("wil je naar beneden type: NAAR BENEDEN");
     }
 }
