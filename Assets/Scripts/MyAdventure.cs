@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
+using Unity.Collections;
 using UnityEngine;
 
 public class MyAdventure : MonoBehaviour
@@ -13,7 +14,10 @@ public class MyAdventure : MonoBehaviour
         geluid_horen,
         geluid_Ja,
         geluid_verder_film_kijken,
+        geluid_verder_naar_beneden,
         geluid_niet_film_kijken,
+        naar_de_keuken_lopen,
+        naar_de_deur_lopen,
         geluid_Nee,
         loopt_naar_de_gang,
 
@@ -109,6 +113,19 @@ public class MyAdventure : MonoBehaviour
             {
                 //Terminal.WriteLine("je invoer is niet juist.");
             }
+
+            if  (currentStates == States.geluid_verder_naar_beneden)
+            {
+                if (input == "NAAR DE KEUKEN LOPEN") ;
+            }
+        }
+
+        if (currentStates == States.geluid_verder_film_kijken)
+        {
+            if (input == "NAAR DE KEUKEN LOPEN")
+            {
+                geluid_verder_naar_beneden();
+            }
         }
 
     }
@@ -161,7 +178,24 @@ public class MyAdventure : MonoBehaviour
         currentStates = States.geluid_verder_film_kijken;
         Terminal.ClearScreen();
         Terminal.WriteLine("Je hoort iets op de gang op je af lopen");
-        Terminal.WriteLine("je gaat kijken");
+        Terminal.WriteLine("je gaat kijken maar je ziet niks");
+        Terminal.WriteLine("Wil je naar beneden gaan?");
+        Terminal.WriteLine("Of");
+        Terminal.WriteLine("Wil je naar naar een ander kamer gaan?");
+        
+    }
+
+    void geluid_verder_naar_beneden()
+    {
+        currentStates = States.geluid_verder_naar_beneden;
+        Terminal.ClearScreen();
+        Terminal.WriteLine("je gaat naar beneden");
+        Terminal.WriteLine("je loopt heel rustig van de trap af");
+        Terminal.WriteLine("je ziet dat de deur open staat");
+        Terminal.WriteLine("Je kijkt naar de keuken en je ziet dat de keuken la open staat");
+        Terminal.WriteLine("Type naar de keuken lopen als je wilt kijken?");
+        Terminal.WriteLine("of");
+        Terminal.WriteLine("Type naar voordeur lopen om te kijken wat er gebeurt");
     }
 
     void geluid_Nee()
