@@ -21,10 +21,11 @@ public class MyAdventure : MonoBehaviour
         geluid_andere_kamer,
         raam_spring_vrij,
         ouders_roepen,
+        geluid_Nee,
+        raam_wacht,
         naar_beneden,
         keuken_lopen,
         deur_lopen,
-        geluid_Nee,
         loopt_naar_de_gang,
     }
 
@@ -104,10 +105,10 @@ public class MyAdventure : MonoBehaviour
             {
                 geluid_gang();
             }
-            else if (input != null)
-            {
-                Terminal.WriteLine("Je invoer is niet juist");
-            }
+//            else
+//            {
+//                Terminal.WriteLine("Je invoer is niet juist");
+//            }
         }
         else if (currentStates == States.raam_kijken)
         {
@@ -163,7 +164,12 @@ public class MyAdventure : MonoBehaviour
             {
                 raam_spring_vrij();
             }
+            else if (input == "TERUG NAAR BEGINSCHERM")
+            {
+                ShowMainMenu();
+            }
         }
+        
 
         else if (currentStates == States.raam_spring_vrij)
         {
@@ -211,7 +217,6 @@ public class MyAdventure : MonoBehaviour
     }
 
     void StartIntro()
-
     {
         currentStates = States.Intro;
         Terminal.ClearScreen();
@@ -318,6 +323,21 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("keer terug naar begin scherm");
         Terminal.WriteLine("Type: TERUG NAAR BEGINSCHERM");
         Terminal.WriteLine("");
+    }
+
+    void raam_wacht()
+    {
+        currentStates = States.raam_wacht;
+        Terminal.ClearScreen();
+        Terminal.WriteLine("Het geluid word steeds harder");
+        Terminal.WriteLine("Het komt steeds dichterbij");
+        Terminal.WriteLine("Opeens hoor je niks meer");
+        Terminal.WriteLine("Je denkt dat het weg is gegaan");
+        Terminal.WriteLine(".....");
+        Terminal.WriteLine("BAM!!");
+        Terminal.WriteLine("deur wordt ingetrapt");
+        Terminal.WriteLine("Je ziet de moordenaar en je bent door");
+        Terminal.WriteLine("Type: TERUG NAAR BEGINSCHERM");
     }
 
     void geluid_verder_naar_beneden()
