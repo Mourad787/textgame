@@ -104,7 +104,7 @@ public class MyAdventure : MonoBehaviour
             {
                 geluid_gang();
             }
-            else
+            else if (input != null)
             {
                 Terminal.WriteLine("Je invoer is niet juist");
             }
@@ -122,12 +122,11 @@ public class MyAdventure : MonoBehaviour
             if (input == "NAAR ANDERE KAMER GAAN")
             {
                 geluid_andere_kamer();
-            } 
+            }
             else if (input == "NAAR BENEDEN GAAN")
             {
                 geluid_verder_naar_beneden();
             }
-
         }
 
         else if (currentStates == States.geluid_Nee)
@@ -150,14 +149,14 @@ public class MyAdventure : MonoBehaviour
             }
         }
 
-            else if (currentStates == States.geluid_andere_kamer)
+        else if (currentStates == States.geluid_andere_kamer)
         {
             if (input == "RAAM DICHT") ;
             {
                 raam_dicht();
             }
         }
-        
+
         else if (currentStates == States.raam_dicht)
         {
             if (input == "UIT RAAM SPRINGEN")
@@ -165,7 +164,7 @@ public class MyAdventure : MonoBehaviour
                 raam_spring_vrij();
             }
         }
-        
+
         else if (currentStates == States.raam_spring_vrij)
         {
             if (input == "TERUG NAAR BEGINSCHERM")
@@ -173,7 +172,7 @@ public class MyAdventure : MonoBehaviour
                 ShowMainMenu();
             }
         }
-        
+
         else if (currentStates == States.geluid_niet_film_kijken)
         {
             if (input == "NAAR DE KEUKEN LOPEN")
@@ -183,6 +182,18 @@ public class MyAdventure : MonoBehaviour
             else
             {
                 Terminal.WriteLine("Je invoer is niet juist");
+            }
+        }
+
+        else if (currentStates == States.geluid_verder_naar_beneden)
+        {
+            if (input == "NAAR DE KEUKEN LOPEN")
+            {
+                keuken_lopen();
+            }
+            else if (input == "NAAR VOORDEUR LOPEN")
+            {
+                deur_lopen();
             }
         }
     }
@@ -210,6 +221,7 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("Het was de perfecte nacht voor ");
         Terminal.WriteLine("een horror film.");
         Terminal.WriteLine("Type VERDER om het spel te beginnen");
+        Terminal.WriteLine("");
         currentStates = States.Intro;
     }
 
@@ -222,6 +234,7 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("wil je uit het raam kijken?");
         Terminal.WriteLine("Type JA als je wilt kijken");
         Terminal.WriteLine("Type NEE als je niet wilt kijken");
+        Terminal.WriteLine("");
     }
 
     void geluid_Ja()
@@ -237,7 +250,7 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("als je wilt kijkt naar de man");
         Terminal.WriteLine("Type 'FILM VERDER KIJKEN'");
         Terminal.WriteLine("als je film verder wilt kijken");
-// moet kijken of ik die verder kijken of blijf kijken er moet laten of eruit moet halen//
+        Terminal.WriteLine("");
     }
 
     void raam_kijken()
@@ -249,6 +262,7 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("Het is het einde van de game keer terug naar de beginscherm om");
         Terminal.WriteLine("het spel opnieuw te spelen");
         Terminal.WriteLine("Type: OPNIEUW SPELEN");
+        Terminal.WriteLine("");
     }
 
     void geluid_gang()
@@ -262,6 +276,7 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("Of");
         Terminal.WriteLine("Wil je naar een andere kamer gaan?");
         Terminal.WriteLine("Type: NAAR ANDERE KAMER GAAN");
+        Terminal.WriteLine("");
     }
 
     void geluid_andere_kamer()
@@ -274,6 +289,7 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("Type: *RAAM DICHT*");
         Terminal.WriteLine("of");
         Terminal.WriteLine("Type: *LOOP KAMER BINNEN* om naar binnen te gaan");
+        Terminal.WriteLine("");
     }
 
     void raam_dicht()
@@ -289,6 +305,7 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("Als je uit het raam springen");
         Terminal.WriteLine("Type: WACHTEN");
         Terminal.WriteLine("Als je wilt wachten tot het in je kamer komt");
+        Terminal.WriteLine("");
     }
 
     void raam_spring_vrij()
@@ -300,6 +317,7 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("zonder dat er iets met je is overkomen");
         Terminal.WriteLine("keer terug naar begin scherm");
         Terminal.WriteLine("Type: TERUG NAAR BEGINSCHERM");
+        Terminal.WriteLine("");
     }
 
     void geluid_verder_naar_beneden()
@@ -316,6 +334,7 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("als je wilt kijken");
         Terminal.WriteLine("of");
         Terminal.WriteLine("Type *NAAR VOORDEUR LOPEN* om te kijken");
+        Terminal.WriteLine("");
     }
 
     void keuken_lopen()
@@ -329,17 +348,20 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("of");
         Terminal.WriteLine("Type: NAAR BOVEN GAAN");
         Terminal.WriteLine("Als je naar met de mes terug naar je kamer wilt gaan");
+        Terminal.WriteLine("");
     }
-    
+
     void deur_lopen()
     {
         Terminal.ClearScreen();
         Terminal.WriteLine("Je loopt rustig naar de deur toe");
         Terminal.WriteLine("je kijkt goed naar de deur openingen");
-        Terminal.WriteLine("Als je in de deur opening staat komt er opeens iemand die je vermoord");
+        Terminal.WriteLine("Als je in de deur opening staat ");
+        Terminal.WriteLine("komt er opeens iemand die je vermoord");
         Terminal.WriteLine("Je bent nu dood gegaan");
         Terminal.WriteLine("De moordenaar heeft je dood gemaakt");
         Terminal.WriteLine("Type: TERUG NAAR BEGINSCHERM");
+        Terminal.WriteLine("");
     }
 
     void geluid_Nee()
@@ -350,7 +372,9 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("want je hoorde allemaal geluiden.");
         Terminal.WriteLine("Wil je ouders roepen type: OUDERS ROEPEN");
         Terminal.WriteLine("wil je naar beneden type: NAAR BENEDEN GAAN");
+        Terminal.WriteLine("");
     }
+
 
     void ouders_roepen()
     {
@@ -361,6 +385,6 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("ZIJN JULLIE THUISS???");
         Terminal.WriteLine("Type: NAAR BENEDEN GAAN");
         Terminal.WriteLine("Om naar beneden te gaan.");
+        Terminal.WriteLine("");
     }
-    
 }
