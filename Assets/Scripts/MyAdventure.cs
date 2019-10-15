@@ -356,7 +356,7 @@ public class MyAdventure : MonoBehaviour
     {
         currentStates = States.ouders_roepen;
         Terminal.ClearScreen();
-        Terminal.WriteLine("MAMA???");
+        Terminal.WriteLine("MAMA????");
         Terminal.WriteLine("PAPA????");
         Terminal.WriteLine("ZIJN JULLIE THUISS???");
         Terminal.WriteLine("Type: NAAR BENEDEN GAAN");
