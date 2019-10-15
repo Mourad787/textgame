@@ -23,6 +23,8 @@ public class MyAdventure : MonoBehaviour
         ouders_roepen,
         geluid_Nee,
         raam_wacht,
+        naar_de_deur_lopen,
+        naar_boven_gaan,
         naar_beneden,
         keuken_lopen,
         deur_lopen,
@@ -105,6 +107,7 @@ public class MyAdventure : MonoBehaviour
             {
                 geluid_gang();
             }
+
 //            else
 //            {
 //                Terminal.WriteLine("Je invoer is niet juist");
@@ -164,12 +167,20 @@ public class MyAdventure : MonoBehaviour
             {
                 raam_spring_vrij();
             }
-            else if (input == "TERUG NAAR BEGINSCHERM")
+            else if (input == "WACHT")
+            {
+                raam_wacht();
+            }
+        }
+
+        else if (currentStates == States.raam_wacht)
+        {
+            if (input == "TERUG NAAR BEGINSCHERM")
             {
                 ShowMainMenu();
             }
         }
-        
+
 
         else if (currentStates == States.raam_spring_vrij)
         {
@@ -202,6 +213,41 @@ public class MyAdventure : MonoBehaviour
                 deur_lopen();
             }
         }
+
+        else if (currentStates == States.geluid_verder_naar_beneden)
+        {
+            if (input == "TERUG NAAR BEGINSCHERM")
+            {
+                ShowMainMenu();
+            }
+        }
+        else if (currentStates == States.keuken_lopen)
+        {
+            if (input == "NAAR DE DEUR LOPEN")
+            {
+                naar_de_deur_lopen();
+            }
+            else if (input == "NAAR BOVEN GAAN")
+            {
+                naar_boven_gaan();
+            }
+        }
+        
+        else if (currentStates == States.naar_de_deur_lopen)
+        {
+            if (input == "TERUG NAAR BEGINSCHERM")
+            {
+                ShowMainMenu();
+            }
+        }
+        
+        else if (currentStates == States.deur_lopen)
+        {
+            if (input == "TERUG NAAR BEGINSCHERM")
+            {
+                ShowMainMenu();
+            }
+        }
     }
 
     void ShowMainMenu()
@@ -211,7 +257,7 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("Welkom bij HorrorNight!");
         Terminal.WriteLine("Dit is een leuke spannende");
         Terminal.WriteLine("horror game.");
-        Terminal.WriteLine("Alles is hoofdletter gevoelig");
+        Terminal.WriteLine("Alles MOET in HOOFDLETTERS!");
         Terminal.WriteLine("Type START om met het spel te beginnen.");
         Terminal.WriteLine("------------------------------");
     }
@@ -307,8 +353,8 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("het op je af komen");
         Terminal.WriteLine("Je heb nu 2 keuzes");
         Terminal.WriteLine("Type: UIT RAAM SPRINGEN");
-        Terminal.WriteLine("Als je uit het raam springen");
-        Terminal.WriteLine("Type: WACHTEN");
+        Terminal.WriteLine("Als je uit het raam wilt springen");
+        Terminal.WriteLine("Type: WACHT");
         Terminal.WriteLine("Als je wilt wachten tot het in je kamer komt");
         Terminal.WriteLine("");
     }
@@ -359,20 +405,50 @@ public class MyAdventure : MonoBehaviour
 
     void keuken_lopen()
     {
+        currentStates = States.keuken_lopen;
         Terminal.ClearScreen();
         Terminal.WriteLine("Je loopt naar de keuken toe");
-        Terminal.WriteLine("In de keuken la die je ziet liggen er een aantal scherpen menssen in");
+        Terminal.WriteLine("In de keuken la zie je een aantal scherpen menssen zitten");
         Terminal.WriteLine("*Je pakt een mes*");
         Terminal.WriteLine("Type: NAAR DE DEUR LOPEN");
         Terminal.WriteLine("als je naar de deur wilt gaan die open staat");
         Terminal.WriteLine("of");
         Terminal.WriteLine("Type: NAAR BOVEN GAAN");
-        Terminal.WriteLine("Als je naar met de mes terug naar je kamer wilt gaan");
+        Terminal.WriteLine("Als je met je mes terug naar je kamer wilt gaan");
+        Terminal.WriteLine("");
+    }
+
+    void naar_de_deur_lopen()
+    {
+        currentStates = States.naar_de_deur_lopen;
+        Terminal.ClearScreen();
+        Terminal.WriteLine("Je loopt rustig naar de deur toe");
+        Terminal.WriteLine("je kijkt goed naar de deur openingen");
+        Terminal.WriteLine("Als je in de deur opening staat ");
+        Terminal.WriteLine("komt er opeens iemand die je vermoord");
+        Terminal.WriteLine("Je bent nu dood gegaan");
+        Terminal.WriteLine("De moordenaar heeft je dood gemaakt");
+        Terminal.WriteLine("Type: TERUG NAAR BEGINSCHERM");
+        Terminal.WriteLine("");
+    }
+
+    void naar_boven_gaan()
+    {
+        currentStates = States.naar_boven_gaan;
+        Terminal.ClearScreen();
+        Terminal.WriteLine("Je rent met de scherpe mes die je hebt naar boven");
+        Terminal.WriteLine("doordat je iets hoort laat je mes vallen");
+        Terminal.WriteLine("Je raapt de mes op en rent door naar je kamer");
+        Terminal.WriteLine("Je komt aan in je kamer ");
+        Terminal.WriteLine("Type: IN KAST VERSTOPPEN");
+        Terminal.WriteLine("of");
+        Terminal.WriteLine("Type: ONDER BED VERSTOPPEN");
         Terminal.WriteLine("");
     }
 
     void deur_lopen()
     {
+        currentStates = States.deur_lopen;
         Terminal.ClearScreen();
         Terminal.WriteLine("Je loopt rustig naar de deur toe");
         Terminal.WriteLine("je kijkt goed naar de deur openingen");
