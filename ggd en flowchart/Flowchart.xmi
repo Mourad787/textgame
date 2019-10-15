@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.genmymodel.flowchart.core:FlowchartModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.flowchart.core="http://com.genmymodel.flowchart.core/1.0" xmi:id="_d5TJYNjEEemDUejBZMo4Qg" name="model">
+  <eAnnotations xmi:id="_d5TJYdjEEemDUejBZMo4Qg" source="genmymodel">
+    <details xmi:id="_d5TJYtjEEemDUejBZMo4Qg" key="uuid" value="_piKzUNirEemDUejBZMo4Qg"/>
+  </eAnnotations>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:StartShape" xmi:id="_d5TJY9jEEemDUejBZMo4Qg" name="START">
+    <eAnnotations xmi:id="_d5TJZNjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJZdjEEemDUejBZMo4Qg" key="uuid" value="_pIPZoLrZEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:ActionShape" xmi:id="_d5TJZtjEEemDUejBZMo4Qg" name="MENU">
+    <eAnnotations xmi:id="_d5TJZ9jEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJaNjEEemDUejBZMo4Qg" key="uuid" value="_s_MdELrZEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJadjEEemDUejBZMo4Qg" start="_d5TJY9jEEemDUejBZMo4Qg" end="_d5TJZtjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJatjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJa9jEEemDUejBZMo4Qg" key="uuid" value="_vclskLrZEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:ActionShape" xmi:id="_d5TJbNjEEemDUejBZMo4Qg" name="Verhaal">
+    <eAnnotations xmi:id="_d5TJbdjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJbtjEEemDUejBZMo4Qg" key="uuid" value="_wInFELrZEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJb9jEEemDUejBZMo4Qg" start="_d5TJZtjEEemDUejBZMo4Qg" end="_d5TJbNjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJcNjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJcdjEEemDUejBZMo4Qg" key="uuid" value="_47a-g7rZEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:ActionShape" xmi:id="_d5TJctjEEemDUejBZMo4Qg" name="Uit het raam kijken">
+    <eAnnotations xmi:id="_d5TJc9jEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJdNjEEemDUejBZMo4Qg" key="uuid" value="_SfsQsLrfEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:DecisionShape" xmi:id="_d5TJddjEEemDUejBZMo4Qg" name="HOORT GELUIDEN">
+    <eAnnotations xmi:id="_d5TJdtjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJd9jEEemDUejBZMo4Qg" key="uuid" value="_XY40QLrfEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJeNjEEemDUejBZMo4Qg" start="_d5TJddjEEemDUejBZMo4Qg" end="_d5TJddjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJedjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJetjEEemDUejBZMo4Qg" key="uuid" value="_gi33krrfEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJe9jEEemDUejBZMo4Qg" start="_d5TJddjEEemDUejBZMo4Qg" end="_d5TJddjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJfNjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJfdjEEemDUejBZMo4Qg" key="uuid" value="_CNIywLrgEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJftjEEemDUejBZMo4Qg" start="_d5TJbNjEEemDUejBZMo4Qg" end="_d5TJddjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJf9jEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJgNjEEemDUejBZMo4Qg" key="uuid" value="_xl_IYrrhEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJgdjEEemDUejBZMo4Qg" start="_d5TJddjEEemDUejBZMo4Qg" end="_d5TJctjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJgtjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJg9jEEemDUejBZMo4Qg" key="uuid" value="_8eNPI7rhEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJhNjEEemDUejBZMo4Qg" start="_d5TJddjEEemDUejBZMo4Qg" end="_d5TJctjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJhdjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJhtjEEemDUejBZMo4Qg" key="uuid" value="_MeEIo7rjEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:ActionShape" xmi:id="_d5TJh9jEEemDUejBZMo4Qg" name="loopt naar de gang">
+    <eAnnotations xmi:id="_d5TJiNjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJidjEEemDUejBZMo4Qg" key="uuid" value="_bHirwbrpEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJitjEEemDUejBZMo4Qg" start="_d5TJctjEEemDUejBZMo4Qg" end="_d5TJh9jEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJi9jEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJjNjEEemDUejBZMo4Qg" key="uuid" value="_qNRUw7rpEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:ActionShape" xmi:id="_d5TJjdjEEemDUejBZMo4Qg" name="Gaat naar beneden">
+    <eAnnotations xmi:id="_d5TJjtjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJj9jEEemDUejBZMo4Qg" key="uuid" value="_58HzQLrpEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:ActionShape" xmi:id="_d5TJkNjEEemDUejBZMo4Qg" name="roept ouders">
+    <eAnnotations xmi:id="_d5TJkdjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJktjEEemDUejBZMo4Qg" key="uuid" value="_6TxeQbrpEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJk9jEEemDUejBZMo4Qg" start="_d5TJh9jEEemDUejBZMo4Qg" end="_d5TJjdjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJlNjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJldjEEemDUejBZMo4Qg" key="uuid" value="_7VidQ7rpEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:ActionShape" xmi:id="_d5TJltjEEemDUejBZMo4Qg" name="loopt naar woonkamer">
+    <eAnnotations xmi:id="_d5TJl9jEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJmNjEEemDUejBZMo4Qg" key="uuid" value="_Ve5y0brqEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:ActionShape" xmi:id="_d5TJmdjEEemDUejBZMo4Qg" name="Doet voordeur dicht">
+    <eAnnotations xmi:id="_d5TJmtjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJm9jEEemDUejBZMo4Qg" key="uuid" value="_CfpeELrrEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJnNjEEemDUejBZMo4Qg" start="_d5TJltjEEemDUejBZMo4Qg" end="_d5TJmdjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJndjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJntjEEemDUejBZMo4Qg" key="uuid" value="_DIMr07rrEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:EndShape" xmi:id="_d5TJn9jEEemDUejBZMo4Qg" name="DOOD">
+    <eAnnotations xmi:id="_d5TJoNjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJodjEEemDUejBZMo4Qg" key="uuid" value="_Fdd6ELrrEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJotjEEemDUejBZMo4Qg" start="_d5TJmdjEEemDUejBZMo4Qg" end="_d5TJn9jEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJo9jEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJpNjEEemDUejBZMo4Qg" key="uuid" value="_Jw1zw7rrEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:ActionShape" xmi:id="_d5TJpdjEEemDUejBZMo4Qg" name="blijft in kamer">
+    <eAnnotations xmi:id="_d5TJptjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJp9jEEemDUejBZMo4Qg" key="uuid" value="_ola7QbrrEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJqNjEEemDUejBZMo4Qg" start="_d5TJddjEEemDUejBZMo4Qg" end="_d5TJpdjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJqdjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJqtjEEemDUejBZMo4Qg" key="uuid" value="_pUbWU7rrEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:ActionShape" xmi:id="_d5TJq9jEEemDUejBZMo4Qg" name="blijft muis stil">
+    <eAnnotations xmi:id="_d5TJrNjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJrdjEEemDUejBZMo4Qg" key="uuid" value="_qvEIUbrrEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:EndShape" xmi:id="_d5TJrtjEEemDUejBZMo4Qg" name="Overleefd">
+    <eAnnotations xmi:id="_d5TJr9jEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJsNjEEemDUejBZMo4Qg" key="uuid" value="_txmsQbrrEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJsdjEEemDUejBZMo4Qg" start="_d5TJq9jEEemDUejBZMo4Qg" end="_d5TJrtjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJstjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJs9jEEemDUejBZMo4Qg" key="uuid" value="_uXXrw7rrEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJtNjEEemDUejBZMo4Qg" start="_d5TJpdjEEemDUejBZMo4Qg" end="_d5TJq9jEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJtdjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJttjEEemDUejBZMo4Qg" key="uuid" value="_xGoHUbrrEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:ActionShape" xmi:id="_d5TJt9jEEemDUejBZMo4Qg" name="gaat naar andere slaapkamer">
+    <eAnnotations xmi:id="_d5TJuNjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJudjEEemDUejBZMo4Qg" key="uuid" value="_L-DcwbrsEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJutjEEemDUejBZMo4Qg" start="_d5TJkNjEEemDUejBZMo4Qg" end="_d5TJt9jEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJu9jEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJvNjEEemDUejBZMo4Qg" key="uuid" value="_Mlbl07rsEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:ActionShape" xmi:id="_d5TJvdjEEemDUejBZMo4Qg" name="Loopt naar de keuken">
+    <eAnnotations xmi:id="_d5TJvtjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJv9jEEemDUejBZMo4Qg" key="uuid" value="_ZXwBwbrsEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:ActionShape" xmi:id="_d5TJwNjEEemDUejBZMo4Qg" name="Pakt een mes">
+    <eAnnotations xmi:id="_d5TJwdjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJwtjEEemDUejBZMo4Qg" key="uuid" value="_bZnL0brsEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJw9jEEemDUejBZMo4Qg" start="_d5TJvdjEEemDUejBZMo4Qg" end="_d5TJwNjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJxNjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJxdjEEemDUejBZMo4Qg" key="uuid" value="_cEfU07rsEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:ActionShape" xmi:id="_d5TJxtjEEemDUejBZMo4Qg" name="terug naar zijn kamer">
+    <eAnnotations xmi:id="_d5TJx9jEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJyNjEEemDUejBZMo4Qg" key="uuid" value="_pZ52wbrsEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJydjEEemDUejBZMo4Qg" start="_d5TJwNjEEemDUejBZMo4Qg" end="_d5TJxtjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJytjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJy9jEEemDUejBZMo4Qg" key="uuid" value="_qP3OY7rsEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:EndShape" xmi:id="_d5TJzNjEEemDUejBZMo4Qg" name="overleefd">
+    <eAnnotations xmi:id="_d5TJzdjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJztjEEemDUejBZMo4Qg" key="uuid" value="_Dv9vEbruEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJz9jEEemDUejBZMo4Qg" start="_d5TJxtjEEemDUejBZMo4Qg" end="_d5TJzNjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJ0NjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJ0djEEemDUejBZMo4Qg" key="uuid" value="_HTmN4rruEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:EndShape" xmi:id="_d5TJ0tjEEemDUejBZMo4Qg" name="DOOD">
+    <eAnnotations xmi:id="_d5TJ09jEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJ1NjEEemDUejBZMo4Qg" key="uuid" value="_oqSs0LruEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJ1djEEemDUejBZMo4Qg" start="_d5TJt9jEEemDUejBZMo4Qg" end="_d5TJ0tjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJ1tjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJ19jEEemDUejBZMo4Qg" key="uuid" value="_vsXBY7ruEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJ2NjEEemDUejBZMo4Qg" start="_d5TJ0tjEEemDUejBZMo4Qg" end="_d5TJ0tjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJ2djEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJ2tjEEemDUejBZMo4Qg" key="uuid" value="_KGzf4rrvEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:ActionShape" xmi:id="_d5TJ29jEEemDUejBZMo4Qg" name="Film kijken">
+    <eAnnotations xmi:id="_d5TJ3NjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJ3djEEemDUejBZMo4Qg" key="uuid" value="_3FTS8LrwEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJ3tjEEemDUejBZMo4Qg" start="_d5TJpdjEEemDUejBZMo4Qg" end="_d5TJ29jEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJ39jEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJ4NjEEemDUejBZMo4Qg" key="uuid" value="_5HdX8rrwEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:EndShape" xmi:id="_d5TJ4djEEemDUejBZMo4Qg" name="DOOD">
+    <eAnnotations xmi:id="_d5TJ4tjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJ49jEEemDUejBZMo4Qg" key="uuid" value="_5v4p4brwEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJ5NjEEemDUejBZMo4Qg" start="_d5TJ29jEEemDUejBZMo4Qg" end="_d5TJ4djEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJ5djEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJ5tjEEemDUejBZMo4Qg" key="uuid" value="_6X5FE7rwEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJ59jEEemDUejBZMo4Qg" start="_d5TJjdjEEemDUejBZMo4Qg" end="_d5TJvdjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJ6NjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJ6djEEemDUejBZMo4Qg" key="uuid" value="_JWbg8LrxEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJ6tjEEemDUejBZMo4Qg" start="_d5TJh9jEEemDUejBZMo4Qg" end="_d5TJkNjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJ69jEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJ7NjEEemDUejBZMo4Qg" key="uuid" value="_X9J5wrrxEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJ7djEEemDUejBZMo4Qg" start="_d5TJjdjEEemDUejBZMo4Qg" end="_d5TJltjEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJ7tjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJ79jEEemDUejBZMo4Qg" key="uuid" value="_ZRkH87rxEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJ8NjEEemDUejBZMo4Qg" start="_d5TJ4djEEemDUejBZMo4Qg" end="_d5TJY9jEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJ8djEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJ8tjEEemDUejBZMo4Qg" key="uuid" value="_KFph8rryEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJ89jEEemDUejBZMo4Qg" start="_d5TJ0tjEEemDUejBZMo4Qg" end="_d5TJY9jEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJ9NjEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJ9djEEemDUejBZMo4Qg" key="uuid" value="_Nc8N47ryEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+  <ownedElements xsi:type="com.genmymodel.flowchart.core:FlowchartFlow" xmi:id="_d5TJ9tjEEemDUejBZMo4Qg" start="_d5TJn9jEEemDUejBZMo4Qg" end="_d5TJY9jEEemDUejBZMo4Qg">
+    <eAnnotations xmi:id="_d5TJ99jEEemDUejBZMo4Qg" source="genmymodel">
+      <details xmi:id="_d5TJ-NjEEemDUejBZMo4Qg" key="uuid" value="_UO6Q87ryEDeSE7YQFi9PzA"/>
+    </eAnnotations>
+  </ownedElements>
+</com.genmymodel.flowchart.core:FlowchartModel>
