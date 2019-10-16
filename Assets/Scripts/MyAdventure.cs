@@ -28,6 +28,8 @@ public class MyAdventure : MonoBehaviour
         naar_beneden,
         keuken_lopen,
         deur_lopen,
+        kast_verstoppen,
+        onder_bed,
         loopt_naar_de_gang,
     }
 
@@ -232,7 +234,7 @@ public class MyAdventure : MonoBehaviour
                 naar_boven_gaan();
             }
         }
-        
+
         else if (currentStates == States.naar_de_deur_lopen)
         {
             if (input == "TERUG NAAR BEGINSCHERM")
@@ -240,12 +242,30 @@ public class MyAdventure : MonoBehaviour
                 ShowMainMenu();
             }
         }
-        
+
         else if (currentStates == States.deur_lopen)
         {
             if (input == "TERUG NAAR BEGINSCHERM")
             {
                 ShowMainMenu();
+            }
+        }
+        else if (currentStates == States.naar_boven_gaan)
+        {
+            if (input == "IN KAST VERSTOPPEN")
+            {
+                kast_verstoppen();
+            }
+            else if (input == "ONDER BED VERSTOPPEN")
+            {
+                onder_bed();
+            }
+        }
+        else if (currentStates == States.kast_verstoppen)
+        {
+            if (input == "")
+            {
+                
             }
         }
     }
@@ -444,6 +464,33 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("of");
         Terminal.WriteLine("Type: ONDER BED VERSTOPPEN");
         Terminal.WriteLine("");
+    }
+
+    void kast_verstoppen()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("Je bent verstopt in de kast");
+        Terminal.WriteLine("de moordenaar loopt je kamer binnen");
+        Terminal.WriteLine("Hij kijk onder de bed en gaat er weer vandoor");
+        Terminal.WriteLine("Na een aantal minuten hoor je helemaal niks meer");
+        Terminal.WriteLine("het is dood stil in het huis");
+        Terminal.WriteLine("je komt uit de kast en gaat om hulp vragen");
+        Terminal.WriteLine("Je hebt het spel voltooid!");
+        Terminal.WriteLine("Goed gedaan");
+        Terminal.WriteLine("Type: TERUG NAAR BEGINSCHERM");
+        Terminal.WriteLine("")
+    }
+
+    void onder_bed()
+    {
+        Terminal.ClearScreen();
+        Terminal.WriteLine("de moordenaar loopt je kamer binnen");
+        Terminal.WriteLine("Hij loopt gelijk op de kast af");
+        Terminal.WriteLine("de  moordenaar onderzoekt nog de kamer");
+        Terminal.WriteLine("op het moment dat je denkt dat de");
+        Terminal.WriteLine("moordenaar weg wilt gaan kijkt die nog onder het bed");
+        Terminal.WriteLine("je bent dood.");
+        Terminal.WriteLine("Type: TERUG NAAR BEGINSCHERM");
     }
 
     void deur_lopen()
