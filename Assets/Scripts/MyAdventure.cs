@@ -312,12 +312,12 @@ public class MyAdventure : MonoBehaviour
     {
         currentStates = States.geluid_Ja;
         Terminal.ClearScreen();
-        Terminal.WriteLine("*je kijkt uit het raam*");
-        Terminal.WriteLine("kijkt naar links...");
+        Terminal.WriteLine("*Je kijkt uit het raam*");
+        Terminal.WriteLine("Kijkt naar links...");
         Terminal.WriteLine("Je ziet niks");
         Terminal.WriteLine("Kijkt naar rechts...");
-        Terminal.WriteLine("je ziet een Man");
-        Terminal.WriteLine("als je wilt kijkt naar de man");
+        Terminal.WriteLine("Je ziet een Man");
+        Terminal.WriteLine("als je wilt kijken naar de man");
         Terminal.WriteLine("Type 'BLIJF KIJKEN'");
         Terminal.WriteLine("als je film verder wilt kijken");        
         Terminal.WriteLine("Type 'FILM VERDER KIJKEN'");
@@ -355,11 +355,12 @@ public class MyAdventure : MonoBehaviour
         currentStates = States.geluid_andere_kamer;
         Terminal.ClearScreen();
         Terminal.WriteLine("Je ziet dat de kamer deur op een kiertje staat");
-        Terminal.WriteLine("Je doet de deur rustig open");
+        Terminal.WriteLine("Je doet de deur voorzichtig open");
         Terminal.WriteLine("Je kijkt en je ziet dat de raam open staat");
         Terminal.WriteLine("Type: *RAAM DICHT*");
         Terminal.WriteLine("of");
-        Terminal.WriteLine("Type: *LOOP KAMER BINNEN* om naar binnen te gaan");
+        Terminal.WriteLine("Type: *LOOP KAMER BINNEN*");
+        Terminal.WriteLine("Om naar binnen te gaan");
         Terminal.WriteLine("");
     }
 
@@ -369,13 +370,13 @@ public class MyAdventure : MonoBehaviour
         Terminal.ClearScreen();
         Terminal.WriteLine("je loopt heel voorzicht naar de raam");
         Terminal.WriteLine("Je hoort allemaal geluiden op de gang");
-        Terminal.WriteLine("je hoort het geluid steeds harden en");
+        Terminal.WriteLine("je hoort het geluid steeds harder en");
         Terminal.WriteLine("het op je af komen");
         Terminal.WriteLine("Je heb nu 2 keuzes");
+        Terminal.WriteLine("Wil je uit het raam wilt springen");
         Terminal.WriteLine("Type: UIT RAAM SPRINGEN");
-        Terminal.WriteLine("Als je uit het raam wilt springen");
-        Terminal.WriteLine("Type: WACHT");
         Terminal.WriteLine("Als je wilt wachten tot het in je kamer komt");
+        Terminal.WriteLine("Type: WACHT");
         Terminal.WriteLine("");
     }
 
@@ -416,8 +417,8 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("je ziet dat de deur open staat");
         Terminal.WriteLine("Je kijkt naar de keuken");
         Terminal.WriteLine("en je ziet dat de keukenla open staat");
+        Terminal.WriteLine("als je wilt kijken in de keuken");
         Terminal.WriteLine("Type: *NAAR DE KEUKEN LOPEN*");
-        Terminal.WriteLine("als je wilt kijken");
         Terminal.WriteLine("of");
         Terminal.WriteLine("Type *NAAR VOORDEUR LOPEN* om te kijken");
         Terminal.WriteLine("");
@@ -428,13 +429,13 @@ public class MyAdventure : MonoBehaviour
         currentStates = States.keuken_lopen;
         Terminal.ClearScreen();
         Terminal.WriteLine("Je loopt naar de keuken toe");
-        Terminal.WriteLine("In de keuken la zie je een aantal scherpen menssen zitten");
+        Terminal.WriteLine("In de keukenla zie je een aantal scherpen menssen zitten");
         Terminal.WriteLine("*Je pakt een mes*");
+        Terminal.WriteLine("Als je naar de deur wilt gaan die open staat");
         Terminal.WriteLine("Type: NAAR DE DEUR LOPEN");
-        Terminal.WriteLine("als je naar de deur wilt gaan die open staat");
         Terminal.WriteLine("of");
-        Terminal.WriteLine("Type: NAAR BOVEN GAAN");
         Terminal.WriteLine("Als je met je mes terug naar je kamer wilt gaan");
+        Terminal.WriteLine("Type: NAAR BOVEN GAAN");
         Terminal.WriteLine("");
     }
 
@@ -443,7 +444,7 @@ public class MyAdventure : MonoBehaviour
         currentStates = States.naar_de_deur_lopen;
         Terminal.ClearScreen();
         Terminal.WriteLine("Je loopt rustig naar de deur toe");
-        Terminal.WriteLine("je kijkt goed naar de deur openingen");
+        Terminal.WriteLine("je kijkt goed naar de deur opening");
         Terminal.WriteLine("Als je in de deur opening staat ");
         Terminal.WriteLine("komt er opeens iemand die je vermoord");
         Terminal.WriteLine("Je bent nu dood gegaan");
@@ -470,7 +471,7 @@ public class MyAdventure : MonoBehaviour
     {
         Terminal.ClearScreen();
         Terminal.WriteLine("Je bent verstopt in de kast");
-        Terminal.WriteLine("de moordenaar loopt je kamer binnen");
+        Terminal.WriteLine("De moordenaar loopt je kamer binnen");
         Terminal.WriteLine("Hij kijk onder de bed en gaat er weer vandoor");
         Terminal.WriteLine("Na een aantal minuten hoor je helemaal niks meer");
         Terminal.WriteLine("het is dood stil in het huis");
@@ -478,17 +479,17 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("Je hebt het spel voltooid!");
         Terminal.WriteLine("Goed gedaan");
         Terminal.WriteLine("Type: TERUG NAAR BEGINSCHERM");
-        Terminal.WriteLine("")
+        Terminal.WriteLine("");
     }
 
     void onder_bed()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine("de moordenaar loopt je kamer binnen");
+        Terminal.WriteLine("De moordenaar loopt je kamer binnen");
         Terminal.WriteLine("Hij loopt gelijk op de kast af");
-        Terminal.WriteLine("de  moordenaar onderzoekt nog de kamer");
+        Terminal.WriteLine("De  moordenaar onderzoekt nog de kamer");
         Terminal.WriteLine("op het moment dat je denkt dat de");
-        Terminal.WriteLine("moordenaar weg wilt gaan kijkt die nog onder het bed");
+        Terminal.WriteLine("moordenaar weg wilt kijkt die nog onder het bed");
         Terminal.WriteLine("je bent dood.");
         Terminal.WriteLine("Type: TERUG NAAR BEGINSCHERM");
     }
@@ -498,7 +499,7 @@ public class MyAdventure : MonoBehaviour
         currentStates = States.deur_lopen;
         Terminal.ClearScreen();
         Terminal.WriteLine("Je loopt rustig naar de deur toe");
-        Terminal.WriteLine("je kijkt goed naar de deur openingen");
+        Terminal.WriteLine("je kijkt goed naar de deur opening");
         Terminal.WriteLine("Als je in de deur opening staat ");
         Terminal.WriteLine("komt er opeens iemand die je vermoord");
         Terminal.WriteLine("Je bent nu dood gegaan");
