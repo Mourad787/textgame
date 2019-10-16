@@ -317,10 +317,10 @@ public class MyAdventure : MonoBehaviour
         Terminal.WriteLine("Je ziet niks");
         Terminal.WriteLine("Kijkt naar rechts...");
         Terminal.WriteLine("je ziet een Man");
-        Terminal.WriteLine("Type 'BLIJF KIJKEN'");
         Terminal.WriteLine("als je wilt kijkt naar de man");
+        Terminal.WriteLine("Type 'BLIJF KIJKEN'");
+        Terminal.WriteLine("als je film verder wilt kijken");        
         Terminal.WriteLine("Type 'FILM VERDER KIJKEN'");
-        Terminal.WriteLine("als je film verder wilt kijken");
         Terminal.WriteLine("");
     }
 
@@ -330,7 +330,7 @@ public class MyAdventure : MonoBehaviour
         Terminal.ClearScreen();
         Terminal.WriteLine("Je focust je te veel op de man die buiten staat");
         Terminal.WriteLine("Hierdoor is de moordenaar binnengekomen");
-        Terminal.WriteLine("Het is het einde van de game keer terug naar de beginscherm om");
+        Terminal.WriteLine("Het is de einde van de game keer terug naar de beginscherm om");
         Terminal.WriteLine("het spel opnieuw te spelen");
         Terminal.WriteLine("Type: OPNIEUW SPELEN");
         Terminal.WriteLine("");
